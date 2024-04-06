@@ -1,6 +1,6 @@
 namespace Matrix;
 
-public class Matrix2D
+public class Matrix2D : IEquatable<Matrix2D>
 {
     public readonly int[,] matrix = new int[2, 2];
 
@@ -23,4 +23,24 @@ public class Matrix2D
     {
         return $"[[{matrix[0, 0]}, {matrix[0, 1]}], [{matrix[1, 0]}, {matrix[1, 1]}]]";
     }
+
+    public bool Equals(Matrix2D other)
+    {
+        if (other == null)
+            return false;
+        
+        return matrix[0, 0] == other.matrix[0, 0] && matrix[0, 1] == other.matrix[0, 1] &&
+               matrix[1, 0] == other.matrix[1, 0] && matrix[1, 1] == other.matrix[1, 1];
+    }
+
+    public override bool Equals(object obj)
+    {
+        return Equals(obj as Matrix2D);
+    }
+
+    public override int GetHashCode()
+    {
+        return HashCode.Combine(matrix[0, 0], matrix[0, 1], matrix[1, 0], matrix[1, 0]);
+    }
+    
 }

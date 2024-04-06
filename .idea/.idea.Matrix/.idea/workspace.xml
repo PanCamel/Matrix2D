@@ -7,9 +7,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1475fd4b-ec26-4088-afcd-12afe720f2a1" name="Changes" comment="Initial commit">
-      <change afterPath="$PROJECT_DIR$/Matrix/Matrix2D.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Matrix/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Matrix/Program.cs" afterDir="false" />
+    <list default="true" id="1475fd4b-ec26-4088-afcd-12afe720f2a1" name="Changes" comment="-">
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.Matrix/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Matrix/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Matrix/Matrix2D.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Matrix/Matrix2D.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -18,6 +18,10 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="mock:///Users/wojciechbalucki/RiderProjects/Matrix/Matrix/Program.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///Users/wojciechbalucki/RiderProjects/Matrix/Matrix/Program.cs" root0="SKIP_HIGHLIGHTING" />
   </component>
   <component name="MetaFilesCheckinStateConfiguration" checkMetaFiles="true" />
   <component name="ProjectColorInfo"><![CDATA[{
@@ -81,7 +85,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1712411585058</updated>
-      <workItem from="1712411587256" duration="2332000" />
+      <workItem from="1712411587256" duration="2971000" />
     </task>
     <task id="LOCAL-00001" summary="Initial commit">
       <option name="closed" value="true" />
@@ -91,7 +95,23 @@
       <option name="project" value="LOCAL" />
       <updated>1712411672801</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Matrix2D class constructors, ToStringOverride">
+      <option name="closed" value="true" />
+      <created>1712413996466</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1712413996466</updated>
+    </task>
+    <task id="LOCAL-00003" summary="-">
+      <option name="closed" value="true" />
+      <created>1712414045883</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1712414045883</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -101,7 +121,9 @@
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
     <MESSAGE value="Initial commit" />
-    <option name="LAST_COMMIT_MESSAGE" value="Initial commit" />
+    <MESSAGE value="Matrix2D class constructors, ToStringOverride" />
+    <MESSAGE value="-" />
+    <option name="LAST_COMMIT_MESSAGE" value="-" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
