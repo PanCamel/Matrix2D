@@ -42,5 +42,50 @@ public class Matrix2D : IEquatable<Matrix2D>
     {
         return HashCode.Combine(matrix[0, 0], matrix[0, 1], matrix[1, 0], matrix[1, 0]);
     }
+
+    public static bool operator ==(Matrix2D a, Matrix2D b)
+    {
+        if (ReferenceEquals(a, b))
+        {
+            return true;
+        }
+
+        if (a is null || b is null)
+        {
+            return false;
+        }
+
+        return a.Equals(b);
+    }
+
+    public static bool operator !=(Matrix2D a, Matrix2D b)
+    {
+        return !(a == b);
+    }
+
+    public static Matrix2D operator +(Matrix2D a, Matrix2D b)
+    {
+        return new Matrix2D(
+            a.matrix[0, 0] + b.matrix[0, 0],
+            a.matrix[0, 1] + b.matrix[0, 1],
+            a.matrix[1, 0] + b.matrix[1, 0],
+            a.matrix[1, 1] + b.matrix[1, 1]);
+    }
+    
+    public static Matrix2D operator -(Matrix2D a, Matrix2D b)
+    {
+        return new Matrix2D(
+            a.matrix[0, 0] - b.matrix[0, 0],
+            a.matrix[0, 1] - b.matrix[0, 1],
+            a.matrix[1, 0] - b.matrix[1, 0],
+            a.matrix[1, 1] - b.matrix[1, 1]);
+    }
+
+    public static Matrix2D operator *(Matrix2D a, Matrix2D b)
+    {
+        return new Matrix2D(
+            
+            )
+    }
     
 }

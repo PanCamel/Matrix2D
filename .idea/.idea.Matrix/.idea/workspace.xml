@@ -7,7 +7,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1475fd4b-ec26-4088-afcd-12afe720f2a1" name="Changes" comment="-">
+    <list default="true" id="1475fd4b-ec26-4088-afcd-12afe720f2a1" name="Changes" comment="Added Equals and GetHashCode override">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Matrix/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Matrix/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Matrix/Matrix2D.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Matrix/Matrix2D.cs" afterDir="false" />
     </list>
@@ -20,6 +20,7 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="HighlightingSettingsPerFile">
+    <setting file="mock:///Users/wojciechbalucki/RiderProjects/Matrix/Matrix/Matrix2D.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="mock:///Users/wojciechbalucki/RiderProjects/Matrix/Matrix/Program.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="mock:///Users/wojciechbalucki/RiderProjects/Matrix/Matrix/Program.cs" root0="SKIP_HIGHLIGHTING" />
   </component>
@@ -85,7 +86,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1712411585058</updated>
-      <workItem from="1712411587256" duration="2971000" />
+      <workItem from="1712411587256" duration="4557000" />
     </task>
     <task id="LOCAL-00001" summary="Initial commit">
       <option name="closed" value="true" />
@@ -111,7 +112,15 @@
       <option name="project" value="LOCAL" />
       <updated>1712414045883</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Added Equals and GetHashCode override">
+      <option name="closed" value="true" />
+      <created>1712414791480</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1712414791480</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -123,7 +132,8 @@
     <MESSAGE value="Initial commit" />
     <MESSAGE value="Matrix2D class constructors, ToStringOverride" />
     <MESSAGE value="-" />
-    <option name="LAST_COMMIT_MESSAGE" value="-" />
+    <MESSAGE value="Added Equals and GetHashCode override" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added Equals and GetHashCode override" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
