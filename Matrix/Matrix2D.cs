@@ -120,4 +120,14 @@ public class Matrix2D : IEquatable<Matrix2D>
             matrix[1, 1]
         );
     }
+
+    public static int Determinant(Matrix2D a)
+    {
+        return a.matrix[0, 0] * a.matrix[1, 1] - a.matrix[0, 1] * a.matrix[1, 0];
+    }
+
+    public int Det()
+    {
+        return Determinant(this);
+    }
 }
