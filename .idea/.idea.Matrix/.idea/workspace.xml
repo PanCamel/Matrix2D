@@ -7,9 +7,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1475fd4b-ec26-4088-afcd-12afe720f2a1" name="Changes" comment="Added Equals and GetHashCode override">
+    <list default="true" id="1475fd4b-ec26-4088-afcd-12afe720f2a1" name="Changes" comment="Added operators + and - in Matrix2D">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Matrix/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Matrix/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Matrix/Matrix2D.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Matrix/Matrix2D.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Matrix/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Matrix/Program.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -20,6 +21,7 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="HighlightingSettingsPerFile">
+    <setting file="mock:///Users/wojciechbalucki/RiderProjects/Matrix/Matrix/Matrix2D.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="mock:///Users/wojciechbalucki/RiderProjects/Matrix/Matrix/Matrix2D.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="mock:///Users/wojciechbalucki/RiderProjects/Matrix/Matrix/Program.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="mock:///Users/wojciechbalucki/RiderProjects/Matrix/Matrix/Program.cs" root0="SKIP_HIGHLIGHTING" />
@@ -86,7 +88,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1712411585058</updated>
-      <workItem from="1712411587256" duration="4557000" />
+      <workItem from="1712411587256" duration="6617000" />
     </task>
     <task id="LOCAL-00001" summary="Initial commit">
       <option name="closed" value="true" />
@@ -120,7 +122,15 @@
       <option name="project" value="LOCAL" />
       <updated>1712414791480</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Added operators + and - in Matrix2D">
+      <option name="closed" value="true" />
+      <created>1712497746881</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1712497746881</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -133,7 +143,8 @@
     <MESSAGE value="Matrix2D class constructors, ToStringOverride" />
     <MESSAGE value="-" />
     <MESSAGE value="Added Equals and GetHashCode override" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added Equals and GetHashCode override" />
+    <MESSAGE value="Added operators + and - in Matrix2D" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added operators + and - in Matrix2D" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

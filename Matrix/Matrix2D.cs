@@ -28,7 +28,7 @@ public class Matrix2D : IEquatable<Matrix2D>
     {
         if (other == null)
             return false;
-        
+
         return matrix[0, 0] == other.matrix[0, 0] && matrix[0, 1] == other.matrix[0, 1] &&
                matrix[1, 0] == other.matrix[1, 0] && matrix[1, 1] == other.matrix[1, 1];
     }
@@ -71,7 +71,7 @@ public class Matrix2D : IEquatable<Matrix2D>
             a.matrix[1, 0] + b.matrix[1, 0],
             a.matrix[1, 1] + b.matrix[1, 1]);
     }
-    
+
     public static Matrix2D operator -(Matrix2D a, Matrix2D b)
     {
         return new Matrix2D(
@@ -84,8 +84,40 @@ public class Matrix2D : IEquatable<Matrix2D>
     public static Matrix2D operator *(Matrix2D a, Matrix2D b)
     {
         return new Matrix2D(
-            
-            )
+            a.matrix[0, 0] * b.matrix[0, 0] + a.matrix[0, 1] * b.matrix[1, 0],
+            a.matrix[0, 0] * b.matrix[0, 1] + a.matrix[0, 1] * b.matrix[1, 1],
+            a.matrix[1, 0] * b.matrix[0, 0] + a.matrix[1, 1] * b.matrix[1, 0],
+            a.matrix[1, 0] * b.matrix[0, 1] + a.matrix[1, 1] * b.matrix[1, 1]
+        );
     }
-    
+
+    public static Matrix2D operator *(int k, Matrix2D a)
+    {
+        return new Matrix2D(
+            k * a.matrix[0, 0],
+            k * a.matrix[0, 1],
+            k * a.matrix[1, 0],
+            k * a.matrix[1, 1]
+        );
+    }
+
+    public static Matrix2D operator *(Matrix2D a, int k)
+    {
+        return k * a;
+    }
+
+    public static Matrix2D operator -(Matrix2D a)
+    {
+        return -1 * a;
+    }
+
+    public Matrix2D Transpose()
+    {
+        return new Matrix2D(
+            matrix[0, 0],
+            matrix[1, 0],
+            matrix[0, 1],
+            matrix[1, 1]
+        );
+    }
 }
