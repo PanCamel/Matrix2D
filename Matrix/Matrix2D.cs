@@ -130,4 +130,45 @@ public class Matrix2D : IEquatable<Matrix2D>
     {
         return Determinant(this);
     }
+    
+    public static explicit operator int[,](Matrix2D matrix2D)
+    {
+        int[,] result = new int[2, 2];
+
+        for (int i = 0; i < 2; i++)
+        {
+            for (int j = 0; j < 2; j++)
+            {
+                result[i, j] = matrix2D.matrix[i, j];
+            }
+        }
+
+        return result;
+    }
+    public static Matrix2D Parse(string input)
+    {
+        if (input == null)
+            throw new ArgumentNullException(nameof(input));
+
+        input = input.Trim();
+
+        if (input.Length < 9 || input[0] != '[' || input[input.Length - 1] != ']')
+            throw new FormatException("Invalid format");
+
+        var elements = input.Substring(1, input.Length - 2).Split(',', StringSplitOptions.RemoveEmptyEntries);
+
+        if (elements.Length != 4)
+            throw new FormatException("Invalid format");
+
+        var values = new int[4];
+
+        for (int i = 0; i < 4; i++)
+        {
+            if (!int.TryParse(elements[i].Trim(), out values[i]))
+                throw new FormatException("Invalid format");
+        }
+
+        return new Matrix2D(values[0], values[1], values[2], values[3]);
+    }
+    
 }
