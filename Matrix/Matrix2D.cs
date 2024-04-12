@@ -4,6 +4,11 @@ public class Matrix2D : IEquatable<Matrix2D>
 {
     public readonly int[,] matrix = new int[2, 2];
 
+    public int this[int i, int j]
+    {
+        get { return matrix[i, j]; }
+    }
+
     public Matrix2D(int a, int b, int c, int d)
     {
         matrix[0, 0] = a;
@@ -130,7 +135,7 @@ public class Matrix2D : IEquatable<Matrix2D>
     {
         return Determinant(this);
     }
-    
+
     public static explicit operator int[,](Matrix2D matrix2D)
     {
         int[,] result = new int[2, 2];
@@ -145,6 +150,7 @@ public class Matrix2D : IEquatable<Matrix2D>
 
         return result;
     }
+
     public static Matrix2D Parse(string input)
     {
         if (input == null)
@@ -155,20 +161,26 @@ public class Matrix2D : IEquatable<Matrix2D>
         if (input.Length < 9 || input[0] != '[' || input[input.Length - 1] != ']')
             throw new FormatException("Invalid format");
 
-        var elements = input.Substring(1, input.Length - 2).Split(',', StringSplitOptions.RemoveEmptyEntries);
+        var matrixElements = input.Substring(1, input.Length - 2).Split(new[] { "], [" }, StringSplitOptions.None);
 
-        if (elements.Length != 4)
+        if (matrixElements.Length != 2)
             throw new FormatException("Invalid format");
 
-        var values = new int[4];
-
-        for (int i = 0; i < 4; i++)
+        var elements = new List<int>();
+        foreach (var element in matrixElements)
         {
-            if (!int.TryParse(elements[i].Trim(), out values[i]))
+            var innerElements = element.Split(',', StringSplitOptions.RemoveEmptyEntries);
+            if (innerElements.Length != 2)
                 throw new FormatException("Invalid format");
+
+            foreach (var innerElement in innerElements)
+            {
+                if (!int.TryParse(innerElement.Trim(), out var value))
+                    throw new FormatException("Invalid format");
+                elements.Add(value);
+            }
         }
 
-        return new Matrix2D(values[0], values[1], values[2], values[3]);
+        return new Matrix2D(elements[0], elements[1], elements[2], elements[3]);
     }
-    
 }
