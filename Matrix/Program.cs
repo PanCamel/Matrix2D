@@ -1,4 +1,4 @@
-﻿using Matrix;
+﻿using ClassLibrary;
 
 Matrix2D matrixA = new Matrix2D(1, 2, 3, 4);
 Matrix2D matrixB = new Matrix2D(5, 6, 7, 8);

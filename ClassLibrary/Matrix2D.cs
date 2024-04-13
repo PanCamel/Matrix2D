@@ -1,4 +1,4 @@
-namespace Matrix;
+namespace ClassLibrary;
 
 public class Matrix2D : IEquatable<Matrix2D>
 {
